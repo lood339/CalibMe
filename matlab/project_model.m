@@ -1,3 +1,4 @@
+%{
 %% project model line
 clear
 close all
@@ -56,6 +57,7 @@ for k = 1:size(line_segment_index,1)
         hold on
     end
 end
+%}
 
 
 
