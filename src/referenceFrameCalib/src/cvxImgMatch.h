@@ -12,40 +12,34 @@
 // matching two images in pixel level
 
 #include <stdio.h>
-#include "opencv2/core/core.hpp"
-#include "opencv2/core/core_c.h"
-#include "opencv2/imgproc/imgproc.hpp"
-#include "opencv2/imgproc/imgproc_c.h"
 #include <vector>
+#include <opencv2/core/core.hpp>
+#include <opencv2/core/core_c.h>
+#include <opencv2/imgproc/imgproc.hpp>
+#include <opencv2/imgproc/imgproc_c.h>
 #include "eigenVLFeatSIFT.h"
 
 using std::vector;
 
-struct SIFTMatchingParameter
-{
-    
-};
 
-class CvxImgMatch
-{
-public:
-    static void SIFTMatching(const cv::Mat & srcImg, const cv::Mat & dstImg,
-                             const SIFTMatchingParameter & param, 
-                             vector<cv::Point2d> & srcPts, vector<cv::Point2d> & dstPts);
-    
-    static void SIFTMatching(const vector<std::shared_ptr<sift_keypoint> >& src_keypoints,
-                             const vector<std::shared_ptr<sift_keypoint> >& dst_keypoints,
+namespace cvx {
+    struct SIFTMatchingParameter
+    {
+        // @todo add parameter here
+        
+    };
+    // @todo document
+    void SIFTMatching(const cv::Mat & srcImg, const cv::Mat & dstImg,
+                      const SIFTMatchingParameter & param,
+                      vector<cv::Point2d> & srcPts, vector<cv::Point2d> & dstPts);
+    // @todo document
+    void SIFTMatching(const vector<std::shared_ptr<sift_keypoint> >& srcKeypoints,
+                             const vector<std::shared_ptr<sift_keypoint> >& dstKeypoints,
                              const SIFTMatchingParameter & param,
                              vector<cv::Point2d> & srcPts, vector<cv::Point2d> & dstPts);
     
-    // nearest neighbor matching
-    static void NNMatching(const cv::Mat & srcDescriptors, const cv::Mat & dstDescriptors,
-                           const vector<cv::Point2d> & srcPts, const vector<cv::Point2d> & dstPts,
-                           vector<cv::Point2d> & matchedSrcPts, vector<cv::Point2d> & matchedDstPts);
-    
-   
-    
-};
+} // namespace
+
 
 
 #endif /* defined(__RGBD_RF__cvxImgMatch__) */

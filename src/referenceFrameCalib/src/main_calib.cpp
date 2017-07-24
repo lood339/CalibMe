@@ -47,8 +47,8 @@ int main(int argc, const char * argv[])
     }
      
     // get parameters
-    const char *keyframeFolder = argv[1];
-    const char *imageFolder = argv[2];
+    const char *referenceFrameFolder = argv[1];
+    const char *testImageFolder = argv[2];
     
     /*
      //debug
@@ -56,29 +56,30 @@ int main(int argc, const char * argv[])
     const char *imageFolder = "./images/*.jpg";
      */
     
-    
-    vector<string> keyframeNames;
-    vul_plus::readFilenames(keyframeFolder, keyframeNames);
+    // Step 1: load reference frames and testing images
+    vector<string> refFrameNames;
+    vul_plus::readFilenames(referenceFrameFolder, refFrameNames);
     
     // find most similar keyframe
-    vector<cv::Mat> keyFrames;
-    vector<vpgl_perspective_camera<double> > keyframeCameras;
-    for (int i = 0; i<keyframeNames.size(); i++) {
+    vector<cv::Mat> refFrames;
+    vector<vpgl_perspective_camera<double> > refCameras;
+    for (int i = 0; i<refFrameNames.size(); i++) {
         string imagename;
         vpgl_perspective_camera<double> camera;
-        VpglPlus::readCamera(keyframeNames[i].c_str(), imagename, camera);
-        keyframeCameras.push_back(camera);
+        VpglPlus::readCamera(refFrameNames[i].c_str(), imagename, camera);
+        refCameras.push_back(camera);
         cv::Mat image = cv::imread(imagename.c_str());
         assert(!image.empty());
-        keyFrames.push_back(image);
+        refFrames.push_back(image);
     }
-    printf("load %lu key frames\n", keyFrames.size());
+    printf("load %lu key frames\n", refFrames.size());
     
     vector<string> test_image_names;
-    vul_plus::readFilenames(imageFolder, test_image_names);
+    vul_plus::readFilenames(testImageFolder, test_image_names);
     printf("test image number %lu\n", test_image_names.size());
     
     
+    // Step 2: detect SIFT feature from reference frames
     // SIFT feature for keyframes
     vl_feat_sift_parameter sift_para;
     sift_para.edge_thresh = 20;
@@ -86,31 +87,32 @@ int main(int argc, const char * argv[])
     sift_para.magnif      = 3.0;
     sift_para.dim = 128;
     
-    vector< vector< std::shared_ptr<sift_keypoint> > > keyframeFeaturesVec(keyFrames.size());
-    for (int i = 0; i<keyFrames.size(); i++) {
-        EigenVLFeatSIFT::extractSIFTKeypoint(keyFrames[i], sift_para, keyframeFeaturesVec[i]);
+    vector< vector< std::shared_ptr<sift_keypoint> > > refFrameFeaturesVec(refFrames.size());
+    for (int i = 0; i<refFrames.size(); i++) {
+        EigenVLFeatSIFT::extractSIFTKeypoint(refFrames[i], sift_para, refFrameFeaturesVec[i]);
     }
     
-    
+    // Step 3: calibrate testing images
     for (int i = 0; i<test_image_names.size(); i += 1) {
+        // Step 3.1: detect sift feature in the testing image
         string cur_image_name = test_image_names[i].c_str();
         cv::Mat queryImage = cv::imread(cur_image_name.c_str());
         assert(!queryImage.empty());
         vector< std::shared_ptr<sift_keypoint> > queryImageFeatures;
         EigenVLFeatSIFT::extractSIFTKeypoint(queryImage, sift_para, queryImageFeatures);
         
-        // loop all keyframes;
+        // loop all reference frames, choose one with the largest matching numbers
         int max_inlier = 0;
         vpgl_perspective_camera<double> finalCamera;
-        for (int j = 0; j<keyframeFeaturesVec.size(); j++) {
-            vector<std::shared_ptr<sift_keypoint> > src_keypoints = keyframeFeaturesVec[j];
+        for (int j = 0; j<refFrameFeaturesVec.size(); j++) {
+            vector<std::shared_ptr<sift_keypoint> > src_keypoints = refFrameFeaturesVec[j];
             vector<std::shared_ptr<sift_keypoint> > dst_keypoints = queryImageFeatures;
             
+            // SIFT matching and ransac filter
             vector<cv::Point2d> src_pts;
             vector<cv::Point2d> dst_pts;
-            SIFTMatchingParameter matching_param;
-            CvxImgMatch::SIFTMatching(src_keypoints, dst_keypoints, matching_param, src_pts, dst_pts);
-            
+            cvx::SIFTMatchingParameter matching_param;
+            cvx::SIFTMatching(src_keypoints, dst_keypoints, matching_param, src_pts, dst_pts);
             
             Mat mask;
             Mat H = cv::findHomography(src_pts, dst_pts, mask, CV_RANSAC, 3.0);
@@ -129,8 +131,9 @@ int main(int argc, const char * argv[])
             }
             printf("inlier number %d\n", n_inlier);
             if (n_inlier > max_inlier && n_inlier >= 4) {
+                // assume the cameras has the same location (only rotate)
                 vpgl_perspective_camera<double> curCamera;
-                bool isCalib = VpglPlus::calibrate_pure_rotate_camera(inlier_src_pts, inlier_dst_pts, keyframeCameras[j], curCamera);
+                bool isCalib = VpglPlus::calibrate_pure_rotate_camera(inlier_src_pts, inlier_dst_pts, refCameras[j], curCamera);
                 if (isCalib) {
                     max_inlier = n_inlier;
                     finalCamera = curCamera;

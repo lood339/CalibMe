@@ -95,9 +95,9 @@
 				BFF6F0B81F25A50F0046B67B /* vl_sift_param.h */,
 				BFF6F0B91F25A50F0046B67B /* cvxImage_310.hpp */,
 				BFF6F0BA1F25A50F0046B67B /* eigenFlann.h */,
+				BFF6F0BD1F25A50F0046B67B /* eigenFlann.cpp */,
 				BFF6F0BB1F25A50F0046B67B /* eigenVLFeatSIFT.cpp */,
 				BFF6F0BC1F25A50F0046B67B /* eigenVLFeatSIFT.h */,
-				BFF6F0BD1F25A50F0046B67B /* eigenFlann.cpp */,
 				BFF6F0BE1F25A50F0046B67B /* sift_64.c */,
 				BFF6F0BF1F25A50F0046B67B /* sift_64.h */,
 			);
@@ -363,6 +363,7 @@
 				BFF6F08F1F251EA20046B67B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
