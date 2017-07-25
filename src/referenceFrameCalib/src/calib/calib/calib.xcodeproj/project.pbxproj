@@ -1,0 +1,371 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BFF6F0991F251EB30046B67B /* main_calib.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFF6F0901F251EB30046B67B /* main_calib.cpp */; };
+		BFF6F09C1F251EB30046B67B /* vpgl_plus.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFF6F0941F251EB30046B67B /* vpgl_plus.cpp */; };
+		BFF6F0A01F256ADE0046B67B /* vul_plus.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFF6F09E1F256ADE0046B67B /* vul_plus.cpp */; };
+		BFF6F0C01F25A50F0046B67B /* cvxImgMatch.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFF6F0B61F25A50F0046B67B /* cvxImgMatch.cpp */; };
+		BFF6F0C11F25A50F0046B67B /* eigenVLFeatSIFT.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFF6F0BB1F25A50F0046B67B /* eigenVLFeatSIFT.cpp */; };
+		BFF6F0C21F25A50F0046B67B /* eigenFlann.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFF6F0BD1F25A50F0046B67B /* eigenFlann.cpp */; };
+		BFF6F0C31F25A50F0046B67B /* sift_64.c in Sources */ = {isa = PBXBuildFile; fileRef = BFF6F0BE1F25A50F0046B67B /* sift_64.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		BFF6F0841F251EA20046B67B /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		BFF6F0861F251EA20046B67B /* calib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = calib; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFF6F0901F251EB30046B67B /* main_calib.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = main_calib.cpp; path = ../../../main_calib.cpp; sourceTree = "<group>"; };
+		BFF6F0941F251EB30046B67B /* vpgl_plus.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = vpgl_plus.cpp; path = ../../../vpgl_plus.cpp; sourceTree = "<group>"; };
+		BFF6F0951F251EB30046B67B /* vpgl_plus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = vpgl_plus.h; path = ../../../vpgl_plus.h; sourceTree = "<group>"; };
+		BFF6F09E1F256ADE0046B67B /* vul_plus.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = vul_plus.cpp; path = ../../../vul_plus.cpp; sourceTree = "<group>"; };
+		BFF6F09F1F256ADE0046B67B /* vul_plus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = vul_plus.h; path = ../../../vul_plus.h; sourceTree = "<group>"; };
+		BFF6F0B61F25A50F0046B67B /* cvxImgMatch.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = cvxImgMatch.cpp; path = ../../cvxImgMatch.cpp; sourceTree = "<group>"; };
+		BFF6F0B71F25A50F0046B67B /* cvxImgMatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = cvxImgMatch.h; path = ../../cvxImgMatch.h; sourceTree = "<group>"; };
+		BFF6F0B81F25A50F0046B67B /* vl_sift_param.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = vl_sift_param.h; path = ../../vl_sift_param.h; sourceTree = "<group>"; };
+		BFF6F0B91F25A50F0046B67B /* cvxImage_310.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = cvxImage_310.hpp; path = ../../cvxImage_310.hpp; sourceTree = "<group>"; };
+		BFF6F0BA1F25A50F0046B67B /* eigenFlann.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = eigenFlann.h; path = ../../eigenFlann.h; sourceTree = "<group>"; };
+		BFF6F0BB1F25A50F0046B67B /* eigenVLFeatSIFT.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = eigenVLFeatSIFT.cpp; path = ../../eigenVLFeatSIFT.cpp; sourceTree = "<group>"; };
+		BFF6F0BC1F25A50F0046B67B /* eigenVLFeatSIFT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = eigenVLFeatSIFT.h; path = ../../eigenVLFeatSIFT.h; sourceTree = "<group>"; };
+		BFF6F0BD1F25A50F0046B67B /* eigenFlann.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = eigenFlann.cpp; path = ../../eigenFlann.cpp; sourceTree = "<group>"; };
+		BFF6F0BE1F25A50F0046B67B /* sift_64.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = sift_64.c; path = ../../sift_64.c; sourceTree = "<group>"; };
+		BFF6F0BF1F25A50F0046B67B /* sift_64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = sift_64.h; path = ../../sift_64.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BFF6F0831F251EA20046B67B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BFF6F07D1F251EA20046B67B = {
+			isa = PBXGroup;
+			children = (
+				BFF6F0A11F256C620046B67B /* opencv */,
+				BFF6F0881F251EA20046B67B /* calib */,
+				BFF6F0871F251EA20046B67B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BFF6F0871F251EA20046B67B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BFF6F0861F251EA20046B67B /* calib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BFF6F0881F251EA20046B67B /* calib */ = {
+			isa = PBXGroup;
+			children = (
+				BFF6F0901F251EB30046B67B /* main_calib.cpp */,
+				BFF6F09E1F256ADE0046B67B /* vul_plus.cpp */,
+				BFF6F09F1F256ADE0046B67B /* vul_plus.h */,
+				BFF6F0941F251EB30046B67B /* vpgl_plus.cpp */,
+				BFF6F0951F251EB30046B67B /* vpgl_plus.h */,
+			);
+			path = calib;
+			sourceTree = "<group>";
+		};
+		BFF6F0A11F256C620046B67B /* opencv */ = {
+			isa = PBXGroup;
+			children = (
+				BFF6F0B61F25A50F0046B67B /* cvxImgMatch.cpp */,
+				BFF6F0B71F25A50F0046B67B /* cvxImgMatch.h */,
+				BFF6F0B81F25A50F0046B67B /* vl_sift_param.h */,
+				BFF6F0B91F25A50F0046B67B /* cvxImage_310.hpp */,
+				BFF6F0BA1F25A50F0046B67B /* eigenFlann.h */,
+				BFF6F0BD1F25A50F0046B67B /* eigenFlann.cpp */,
+				BFF6F0BB1F25A50F0046B67B /* eigenVLFeatSIFT.cpp */,
+				BFF6F0BC1F25A50F0046B67B /* eigenVLFeatSIFT.h */,
+				BFF6F0BE1F25A50F0046B67B /* sift_64.c */,
+				BFF6F0BF1F25A50F0046B67B /* sift_64.h */,
+			);
+			name = opencv;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BFF6F0851F251EA20046B67B /* calib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BFF6F08D1F251EA20046B67B /* Build configuration list for PBXNativeTarget "calib" */;
+			buildPhases = (
+				BFF6F0821F251EA20046B67B /* Sources */,
+				BFF6F0831F251EA20046B67B /* Frameworks */,
+				BFF6F0841F251EA20046B67B /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = calib;
+			productName = calib;
+			productReference = BFF6F0861F251EA20046B67B /* calib */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFF6F07E1F251EA20046B67B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = "Nowhere Planet";
+				TargetAttributes = {
+					BFF6F0851F251EA20046B67B = {
+						CreatedOnToolsVersion = 6.4;
+					};
+				};
+			};
+			buildConfigurationList = BFF6F0811F251EA20046B67B /* Build configuration list for PBXProject "calib" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = BFF6F07D1F251EA20046B67B;
+			productRefGroup = BFF6F0871F251EA20046B67B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BFF6F0851F251EA20046B67B /* calib */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BFF6F0821F251EA20046B67B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFF6F0C31F25A50F0046B67B /* sift_64.c in Sources */,
+				BFF6F0991F251EB30046B67B /* main_calib.cpp in Sources */,
+				BFF6F09C1F251EB30046B67B /* vpgl_plus.cpp in Sources */,
+				BFF6F0C21F25A50F0046B67B /* eigenFlann.cpp in Sources */,
+				BFF6F0C11F25A50F0046B67B /* eigenVLFeatSIFT.cpp in Sources */,
+				BFF6F0A01F256ADE0046B67B /* vul_plus.cpp in Sources */,
+				BFF6F0C01F25A50F0046B67B /* cvxImgMatch.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		BFF6F08B1F251EA20046B67B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		BFF6F08C1F251EA20046B67B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		BFF6F08E1F251EA20046B67B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					/Users/jimmy/Code/vxl_core/build/vcl,
+					/Users/jimmy/Code/vxl_core/build/core,
+					/Users/jimmy/Code/vxl_core/vxl_core/vcl,
+					/Users/jimmy/Code/vxl_core/vxl_core/core,
+					/Users/jimmy/Code/vlfeat,
+					"/Users/jimmy/Code/opencv-3.1.0/opencv_310/include",
+					/Users/jimmy/Code/eigen_3.2.6,
+					"/Users/jimmy/Code/flann-1.8.4-src/src/cpp",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					/Users/jimmy/Code/vxl_core/build/lib,
+					/Users/jimmy/Code/vlfeat/bin/maci64,
+					"/Users/jimmy/Code/opencv-3.1.0/opencv_310/lib",
+					"/Users/jimmy/Code/flann-1.8.4-src/build/lib",
+				);
+				OTHER_LDFLAGS = (
+					"-lvpgl",
+					"-lvnl",
+					"-lvgl",
+					"-lvcl",
+					"-lvul",
+					"-lvpgl_algo",
+					"-lvsl",
+					"-lvpgl_io",
+					"-lvnl_io",
+					"-lvgl_io",
+					"-lvgl_algo",
+					"-lvnl_algo",
+					"-lv3p_netlib",
+					"-lvl",
+					"-lopencv_core",
+					"-lopencv_highgui",
+					"-lopencv_imgproc",
+					"-lopencv_imgcodecs",
+					"-lopencv_calib3d",
+					"-lflann",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		BFF6F08F1F251EA20046B67B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					/Users/jimmy/Code/vxl_core/build/vcl,
+					/Users/jimmy/Code/vxl_core/build/core,
+					/Users/jimmy/Code/vxl_core/vxl_core/vcl,
+					/Users/jimmy/Code/vxl_core/vxl_core/core,
+					/Users/jimmy/Code/vlfeat,
+					"/Users/jimmy/Code/opencv-3.1.0/opencv_310/include",
+					/Users/jimmy/Code/eigen_3.2.6,
+					"/Users/jimmy/Code/flann-1.8.4-src/src/cpp",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					/Users/jimmy/Code/vxl_core/build/lib,
+					/Users/jimmy/Code/vlfeat/bin/maci64,
+					"/Users/jimmy/Code/opencv-3.1.0/opencv_310/lib",
+					"/Users/jimmy/Code/flann-1.8.4-src/build/lib",
+				);
+				OTHER_LDFLAGS = (
+					"-lvpgl",
+					"-lvnl",
+					"-lvgl",
+					"-lvcl",
+					"-lvul",
+					"-lvpgl_algo",
+					"-lvsl",
+					"-lvpgl_io",
+					"-lvnl_io",
+					"-lvgl_io",
+					"-lvgl_algo",
+					"-lvnl_algo",
+					"-lv3p_netlib",
+					"-lvl",
+					"-lopencv_core",
+					"-lopencv_highgui",
+					"-lopencv_imgproc",
+					"-lopencv_imgcodecs",
+					"-lopencv_calib3d",
+					"-lflann",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BFF6F0811F251EA20046B67B /* Build configuration list for PBXProject "calib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BFF6F08B1F251EA20046B67B /* Debug */,
+				BFF6F08C1F251EA20046B67B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BFF6F08D1F251EA20046B67B /* Build configuration list for PBXNativeTarget "calib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BFF6F08E1F251EA20046B67B /* Debug */,
+				BFF6F08F1F251EA20046B67B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFF6F07E1F251EA20046B67B /* Project object */;
+}
