@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		BFF6F0991F251EB30046B67B /* main_calib.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFF6F0901F251EB30046B67B /* main_calib.cpp */; };
-		BFF6F09C1F251EB30046B67B /* vpgl_plus.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFF6F0941F251EB30046B67B /* vpgl_plus.cpp */; };
-		BFF6F0A01F256ADE0046B67B /* vul_plus.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFF6F09E1F256ADE0046B67B /* vul_plus.cpp */; };
-		BFF6F0C01F25A50F0046B67B /* cvxImgMatch.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFF6F0B61F25A50F0046B67B /* cvxImgMatch.cpp */; };
-		BFF6F0C11F25A50F0046B67B /* eigenVLFeatSIFT.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFF6F0BB1F25A50F0046B67B /* eigenVLFeatSIFT.cpp */; };
-		BFF6F0C21F25A50F0046B67B /* eigenFlann.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFF6F0BD1F25A50F0046B67B /* eigenFlann.cpp */; };
-		BFF6F0C31F25A50F0046B67B /* sift_64.c in Sources */ = {isa = PBXBuildFile; fileRef = BFF6F0BE1F25A50F0046B67B /* sift_64.c */; };
+		BFB272E61F2A91B20086B9CF /* main_calib.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFB272E51F2A91B20086B9CF /* main_calib.cpp */; };
+		BFB272EB1F2A91C00086B9CF /* vpgl_plus.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFB272E71F2A91C00086B9CF /* vpgl_plus.cpp */; };
+		BFB272EC1F2A91C00086B9CF /* vul_plus.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFB272E91F2A91C00086B9CF /* vul_plus.cpp */; };
+		BFF73D821F2A633F00F9EA0A /* cvxImgMatch.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFF73D791F2A633F00F9EA0A /* cvxImgMatch.cpp */; };
+		BFF73D831F2A633F00F9EA0A /* eigenFlann.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFF73D7B1F2A633F00F9EA0A /* eigenFlann.cpp */; };
+		BFF73D841F2A633F00F9EA0A /* eigenVLFeatSIFT.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFF73D7D1F2A633F00F9EA0A /* eigenVLFeatSIFT.cpp */; };
+		BFF73D851F2A633F00F9EA0A /* sift_64.c in Sources */ = {isa = PBXBuildFile; fileRef = BFF73D7F1F2A633F00F9EA0A /* sift_64.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -29,22 +29,22 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		BFB272E51F2A91B20086B9CF /* main_calib.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = main_calib.cpp; path = ../../main_calib.cpp; sourceTree = "<group>"; };
+		BFB272E71F2A91C00086B9CF /* vpgl_plus.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = vpgl_plus.cpp; path = ../../vxl_util/vpgl_plus.cpp; sourceTree = "<group>"; };
+		BFB272E81F2A91C00086B9CF /* vpgl_plus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = vpgl_plus.h; path = ../../vxl_util/vpgl_plus.h; sourceTree = "<group>"; };
+		BFB272E91F2A91C00086B9CF /* vul_plus.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = vul_plus.cpp; path = ../../vxl_util/vul_plus.cpp; sourceTree = "<group>"; };
+		BFB272EA1F2A91C00086B9CF /* vul_plus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = vul_plus.h; path = ../../vxl_util/vul_plus.h; sourceTree = "<group>"; };
 		BFF6F0861F251EA20046B67B /* calib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = calib; sourceTree = BUILT_PRODUCTS_DIR; };
-		BFF6F0901F251EB30046B67B /* main_calib.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = main_calib.cpp; path = ../../../main_calib.cpp; sourceTree = "<group>"; };
-		BFF6F0941F251EB30046B67B /* vpgl_plus.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = vpgl_plus.cpp; path = ../../../vpgl_plus.cpp; sourceTree = "<group>"; };
-		BFF6F0951F251EB30046B67B /* vpgl_plus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = vpgl_plus.h; path = ../../../vpgl_plus.h; sourceTree = "<group>"; };
-		BFF6F09E1F256ADE0046B67B /* vul_plus.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = vul_plus.cpp; path = ../../../vul_plus.cpp; sourceTree = "<group>"; };
-		BFF6F09F1F256ADE0046B67B /* vul_plus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = vul_plus.h; path = ../../../vul_plus.h; sourceTree = "<group>"; };
-		BFF6F0B61F25A50F0046B67B /* cvxImgMatch.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = cvxImgMatch.cpp; path = ../../cvxImgMatch.cpp; sourceTree = "<group>"; };
-		BFF6F0B71F25A50F0046B67B /* cvxImgMatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = cvxImgMatch.h; path = ../../cvxImgMatch.h; sourceTree = "<group>"; };
-		BFF6F0B81F25A50F0046B67B /* vl_sift_param.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = vl_sift_param.h; path = ../../vl_sift_param.h; sourceTree = "<group>"; };
-		BFF6F0B91F25A50F0046B67B /* cvxImage_310.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = cvxImage_310.hpp; path = ../../cvxImage_310.hpp; sourceTree = "<group>"; };
-		BFF6F0BA1F25A50F0046B67B /* eigenFlann.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = eigenFlann.h; path = ../../eigenFlann.h; sourceTree = "<group>"; };
-		BFF6F0BB1F25A50F0046B67B /* eigenVLFeatSIFT.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = eigenVLFeatSIFT.cpp; path = ../../eigenVLFeatSIFT.cpp; sourceTree = "<group>"; };
-		BFF6F0BC1F25A50F0046B67B /* eigenVLFeatSIFT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = eigenVLFeatSIFT.h; path = ../../eigenVLFeatSIFT.h; sourceTree = "<group>"; };
-		BFF6F0BD1F25A50F0046B67B /* eigenFlann.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = eigenFlann.cpp; path = ../../eigenFlann.cpp; sourceTree = "<group>"; };
-		BFF6F0BE1F25A50F0046B67B /* sift_64.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = sift_64.c; path = ../../sift_64.c; sourceTree = "<group>"; };
-		BFF6F0BF1F25A50F0046B67B /* sift_64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = sift_64.h; path = ../../sift_64.h; sourceTree = "<group>"; };
+		BFF73D781F2A633F00F9EA0A /* cvxImage_310.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = cvxImage_310.hpp; path = ../../opencv_util/cvxImage_310.hpp; sourceTree = "<group>"; };
+		BFF73D791F2A633F00F9EA0A /* cvxImgMatch.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = cvxImgMatch.cpp; path = ../../opencv_util/cvxImgMatch.cpp; sourceTree = "<group>"; };
+		BFF73D7A1F2A633F00F9EA0A /* cvxImgMatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = cvxImgMatch.h; path = ../../opencv_util/cvxImgMatch.h; sourceTree = "<group>"; };
+		BFF73D7B1F2A633F00F9EA0A /* eigenFlann.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = eigenFlann.cpp; path = ../../opencv_util/eigenFlann.cpp; sourceTree = "<group>"; };
+		BFF73D7C1F2A633F00F9EA0A /* eigenFlann.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = eigenFlann.h; path = ../../opencv_util/eigenFlann.h; sourceTree = "<group>"; };
+		BFF73D7D1F2A633F00F9EA0A /* eigenVLFeatSIFT.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = eigenVLFeatSIFT.cpp; path = ../../opencv_util/eigenVLFeatSIFT.cpp; sourceTree = "<group>"; };
+		BFF73D7E1F2A633F00F9EA0A /* eigenVLFeatSIFT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = eigenVLFeatSIFT.h; path = ../../opencv_util/eigenVLFeatSIFT.h; sourceTree = "<group>"; };
+		BFF73D7F1F2A633F00F9EA0A /* sift_64.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = sift_64.c; path = ../../opencv_util/sift_64.c; sourceTree = "<group>"; };
+		BFF73D801F2A633F00F9EA0A /* sift_64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = sift_64.h; path = ../../opencv_util/sift_64.h; sourceTree = "<group>"; };
+		BFF73D811F2A633F00F9EA0A /* vl_sift_param.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = vl_sift_param.h; path = ../../opencv_util/vl_sift_param.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,8 +61,12 @@
 		BFF6F07D1F251EA20046B67B = {
 			isa = PBXGroup;
 			children = (
+				BFB272E51F2A91B20086B9CF /* main_calib.cpp */,
+				BFB272E71F2A91C00086B9CF /* vpgl_plus.cpp */,
+				BFB272E81F2A91C00086B9CF /* vpgl_plus.h */,
+				BFB272E91F2A91C00086B9CF /* vul_plus.cpp */,
+				BFB272EA1F2A91C00086B9CF /* vul_plus.h */,
 				BFF6F0A11F256C620046B67B /* opencv */,
-				BFF6F0881F251EA20046B67B /* calib */,
 				BFF6F0871F251EA20046B67B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -75,31 +79,19 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		BFF6F0881F251EA20046B67B /* calib */ = {
-			isa = PBXGroup;
-			children = (
-				BFF6F0901F251EB30046B67B /* main_calib.cpp */,
-				BFF6F09E1F256ADE0046B67B /* vul_plus.cpp */,
-				BFF6F09F1F256ADE0046B67B /* vul_plus.h */,
-				BFF6F0941F251EB30046B67B /* vpgl_plus.cpp */,
-				BFF6F0951F251EB30046B67B /* vpgl_plus.h */,
-			);
-			path = calib;
-			sourceTree = "<group>";
-		};
 		BFF6F0A11F256C620046B67B /* opencv */ = {
 			isa = PBXGroup;
 			children = (
-				BFF6F0B61F25A50F0046B67B /* cvxImgMatch.cpp */,
-				BFF6F0B71F25A50F0046B67B /* cvxImgMatch.h */,
-				BFF6F0B81F25A50F0046B67B /* vl_sift_param.h */,
-				BFF6F0B91F25A50F0046B67B /* cvxImage_310.hpp */,
-				BFF6F0BA1F25A50F0046B67B /* eigenFlann.h */,
-				BFF6F0BD1F25A50F0046B67B /* eigenFlann.cpp */,
-				BFF6F0BB1F25A50F0046B67B /* eigenVLFeatSIFT.cpp */,
-				BFF6F0BC1F25A50F0046B67B /* eigenVLFeatSIFT.h */,
-				BFF6F0BE1F25A50F0046B67B /* sift_64.c */,
-				BFF6F0BF1F25A50F0046B67B /* sift_64.h */,
+				BFF73D781F2A633F00F9EA0A /* cvxImage_310.hpp */,
+				BFF73D791F2A633F00F9EA0A /* cvxImgMatch.cpp */,
+				BFF73D7A1F2A633F00F9EA0A /* cvxImgMatch.h */,
+				BFF73D7B1F2A633F00F9EA0A /* eigenFlann.cpp */,
+				BFF73D7C1F2A633F00F9EA0A /* eigenFlann.h */,
+				BFF73D7D1F2A633F00F9EA0A /* eigenVLFeatSIFT.cpp */,
+				BFF73D7E1F2A633F00F9EA0A /* eigenVLFeatSIFT.h */,
+				BFF73D7F1F2A633F00F9EA0A /* sift_64.c */,
+				BFF73D801F2A633F00F9EA0A /* sift_64.h */,
+				BFF73D811F2A633F00F9EA0A /* vl_sift_param.h */,
 			);
 			name = opencv;
 			sourceTree = "<group>";
@@ -160,13 +152,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BFF6F0C31F25A50F0046B67B /* sift_64.c in Sources */,
-				BFF6F0991F251EB30046B67B /* main_calib.cpp in Sources */,
-				BFF6F09C1F251EB30046B67B /* vpgl_plus.cpp in Sources */,
-				BFF6F0C21F25A50F0046B67B /* eigenFlann.cpp in Sources */,
-				BFF6F0C11F25A50F0046B67B /* eigenVLFeatSIFT.cpp in Sources */,
-				BFF6F0A01F256ADE0046B67B /* vul_plus.cpp in Sources */,
-				BFF6F0C01F25A50F0046B67B /* cvxImgMatch.cpp in Sources */,
+				BFB272EC1F2A91C00086B9CF /* vul_plus.cpp in Sources */,
+				BFB272EB1F2A91C00086B9CF /* vpgl_plus.cpp in Sources */,
+				BFF73D851F2A633F00F9EA0A /* sift_64.c in Sources */,
+				BFF73D841F2A633F00F9EA0A /* eigenVLFeatSIFT.cpp in Sources */,
+				BFB272E61F2A91B20086B9CF /* main_calib.cpp in Sources */,
+				BFF73D831F2A633F00F9EA0A /* eigenFlann.cpp in Sources */,
+				BFF73D821F2A633F00F9EA0A /* cvxImgMatch.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
