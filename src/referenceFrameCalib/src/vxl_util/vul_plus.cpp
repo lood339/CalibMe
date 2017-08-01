@@ -8,6 +8,7 @@
 
 #include "vul_plus.h"
 #include <dirent.h>
+#include <string.h>
 
 namespace vul_plus {
     void readFilenames(const char *folder, vector<string> & file_names)

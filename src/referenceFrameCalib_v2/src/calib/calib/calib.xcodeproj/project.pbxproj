@@ -7,9 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		BFB272E61F2A91B20086B9CF /* main_calib.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFB272E51F2A91B20086B9CF /* main_calib.cpp */; };
-		BFB272EB1F2A91C00086B9CF /* vpgl_plus.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFB272E71F2A91C00086B9CF /* vpgl_plus.cpp */; };
-		BFB272EC1F2A91C00086B9CF /* vul_plus.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFB272E91F2A91C00086B9CF /* vul_plus.cpp */; };
+		BFB273011F2AF3B00086B9CF /* main_calib.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFB273001F2AF3B00086B9CF /* main_calib.cpp */; };
+		BFB273091F2AF47A0086B9CF /* util.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFB273021F2AF47A0086B9CF /* util.cpp */; };
+		BFB2730A1F2AF47A0086B9CF /* perspective_camera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFB273051F2AF47A0086B9CF /* perspective_camera.cpp */; };
+		BFB2730B1F2AF47A0086B9CF /* camera_matrix.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFB273081F2AF47A0086B9CF /* camera_matrix.cpp */; };
 		BFF73D821F2A633F00F9EA0A /* cvxImgMatch.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFF73D791F2A633F00F9EA0A /* cvxImgMatch.cpp */; };
 		BFF73D831F2A633F00F9EA0A /* eigenFlann.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFF73D7B1F2A633F00F9EA0A /* eigenFlann.cpp */; };
 		BFF73D841F2A633F00F9EA0A /* eigenVLFeatSIFT.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFF73D7D1F2A633F00F9EA0A /* eigenVLFeatSIFT.cpp */; };
@@ -29,11 +30,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		BFB272E51F2A91B20086B9CF /* main_calib.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = main_calib.cpp; path = ../../main_calib.cpp; sourceTree = "<group>"; };
-		BFB272E71F2A91C00086B9CF /* vpgl_plus.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = vpgl_plus.cpp; path = ../../vxl_util/vpgl_plus.cpp; sourceTree = "<group>"; };
-		BFB272E81F2A91C00086B9CF /* vpgl_plus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = vpgl_plus.h; path = ../../vxl_util/vpgl_plus.h; sourceTree = "<group>"; };
-		BFB272E91F2A91C00086B9CF /* vul_plus.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = vul_plus.cpp; path = ../../vxl_util/vul_plus.cpp; sourceTree = "<group>"; };
-		BFB272EA1F2A91C00086B9CF /* vul_plus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = vul_plus.h; path = ../../vxl_util/vul_plus.h; sourceTree = "<group>"; };
+		BFB273001F2AF3B00086B9CF /* main_calib.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = main_calib.cpp; path = ../../main_calib.cpp; sourceTree = "<group>"; };
+		BFB273021F2AF47A0086B9CF /* util.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = util.cpp; path = ../../eigen_util/util.cpp; sourceTree = "<group>"; };
+		BFB273031F2AF47A0086B9CF /* util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = util.h; path = ../../eigen_util/util.h; sourceTree = "<group>"; };
+		BFB273041F2AF47A0086B9CF /* rotation_3d.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = rotation_3d.h; path = ../../eigen_util/rotation_3d.h; sourceTree = "<group>"; };
+		BFB273051F2AF47A0086B9CF /* perspective_camera.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = perspective_camera.cpp; path = ../../eigen_util/perspective_camera.cpp; sourceTree = "<group>"; };
+		BFB273061F2AF47A0086B9CF /* perspective_camera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = perspective_camera.h; path = ../../eigen_util/perspective_camera.h; sourceTree = "<group>"; };
+		BFB273071F2AF47A0086B9CF /* camera_matrix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = camera_matrix.h; path = ../../eigen_util/camera_matrix.h; sourceTree = "<group>"; };
+		BFB273081F2AF47A0086B9CF /* camera_matrix.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = camera_matrix.cpp; path = ../../eigen_util/camera_matrix.cpp; sourceTree = "<group>"; };
 		BFF6F0861F251EA20046B67B /* calib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = calib; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFF73D781F2A633F00F9EA0A /* cvxImage_310.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = cvxImage_310.hpp; path = ../../opencv_util/cvxImage_310.hpp; sourceTree = "<group>"; };
 		BFF73D791F2A633F00F9EA0A /* cvxImgMatch.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = cvxImgMatch.cpp; path = ../../opencv_util/cvxImgMatch.cpp; sourceTree = "<group>"; };
@@ -58,14 +62,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BFB272F81F2AB7260086B9CF /* eigen */ = {
+			isa = PBXGroup;
+			children = (
+				BFB273001F2AF3B00086B9CF /* main_calib.cpp */,
+				BFB273021F2AF47A0086B9CF /* util.cpp */,
+				BFB273031F2AF47A0086B9CF /* util.h */,
+				BFB273041F2AF47A0086B9CF /* rotation_3d.h */,
+				BFB273051F2AF47A0086B9CF /* perspective_camera.cpp */,
+				BFB273061F2AF47A0086B9CF /* perspective_camera.h */,
+				BFB273071F2AF47A0086B9CF /* camera_matrix.h */,
+				BFB273081F2AF47A0086B9CF /* camera_matrix.cpp */,
+			);
+			name = eigen;
+			sourceTree = "<group>";
+		};
 		BFF6F07D1F251EA20046B67B = {
 			isa = PBXGroup;
 			children = (
-				BFB272E51F2A91B20086B9CF /* main_calib.cpp */,
-				BFB272E71F2A91C00086B9CF /* vpgl_plus.cpp */,
-				BFB272E81F2A91C00086B9CF /* vpgl_plus.h */,
-				BFB272E91F2A91C00086B9CF /* vul_plus.cpp */,
-				BFB272EA1F2A91C00086B9CF /* vul_plus.h */,
+				BFB272F81F2AB7260086B9CF /* eigen */,
 				BFF6F0A11F256C620046B67B /* opencv */,
 				BFF6F0871F251EA20046B67B /* Products */,
 			);
@@ -152,13 +167,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BFB272EC1F2A91C00086B9CF /* vul_plus.cpp in Sources */,
-				BFB272EB1F2A91C00086B9CF /* vpgl_plus.cpp in Sources */,
+				BFB273011F2AF3B00086B9CF /* main_calib.cpp in Sources */,
 				BFF73D851F2A633F00F9EA0A /* sift_64.c in Sources */,
+				BFB2730A1F2AF47A0086B9CF /* perspective_camera.cpp in Sources */,
 				BFF73D841F2A633F00F9EA0A /* eigenVLFeatSIFT.cpp in Sources */,
-				BFB272E61F2A91B20086B9CF /* main_calib.cpp in Sources */,
 				BFF73D831F2A633F00F9EA0A /* eigenFlann.cpp in Sources */,
 				BFF73D821F2A633F00F9EA0A /* cvxImgMatch.cpp in Sources */,
+				BFB273091F2AF47A0086B9CF /* util.cpp in Sources */,
+				BFB2730B1F2AF47A0086B9CF /* camera_matrix.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -248,35 +264,17 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
-					/Users/jimmy/Code/vxl_core/build/vcl,
-					/Users/jimmy/Code/vxl_core/build/core,
-					/Users/jimmy/Code/vxl_core/vxl_core/vcl,
-					/Users/jimmy/Code/vxl_core/vxl_core/core,
 					/Users/jimmy/Code/vlfeat,
 					"/Users/jimmy/Code/opencv-3.1.0/opencv_310/include",
 					/Users/jimmy/Code/eigen_3.2.6,
 					"/Users/jimmy/Code/flann-1.8.4-src/src/cpp",
 				);
 				LIBRARY_SEARCH_PATHS = (
-					/Users/jimmy/Code/vxl_core/build/lib,
 					/Users/jimmy/Code/vlfeat/bin/maci64,
 					"/Users/jimmy/Code/opencv-3.1.0/opencv_310/lib",
 					"/Users/jimmy/Code/flann-1.8.4-src/build/lib",
 				);
 				OTHER_LDFLAGS = (
-					"-lvpgl",
-					"-lvnl",
-					"-lvgl",
-					"-lvcl",
-					"-lvul",
-					"-lvpgl_algo",
-					"-lvsl",
-					"-lvpgl_io",
-					"-lvnl_io",
-					"-lvgl_io",
-					"-lvgl_algo",
-					"-lvnl_algo",
-					"-lv3p_netlib",
 					"-lvl",
 					"-lopencv_core",
 					"-lopencv_highgui",
@@ -295,35 +293,17 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
-					/Users/jimmy/Code/vxl_core/build/vcl,
-					/Users/jimmy/Code/vxl_core/build/core,
-					/Users/jimmy/Code/vxl_core/vxl_core/vcl,
-					/Users/jimmy/Code/vxl_core/vxl_core/core,
 					/Users/jimmy/Code/vlfeat,
 					"/Users/jimmy/Code/opencv-3.1.0/opencv_310/include",
 					/Users/jimmy/Code/eigen_3.2.6,
 					"/Users/jimmy/Code/flann-1.8.4-src/src/cpp",
 				);
 				LIBRARY_SEARCH_PATHS = (
-					/Users/jimmy/Code/vxl_core/build/lib,
 					/Users/jimmy/Code/vlfeat/bin/maci64,
 					"/Users/jimmy/Code/opencv-3.1.0/opencv_310/lib",
 					"/Users/jimmy/Code/flann-1.8.4-src/build/lib",
 				);
 				OTHER_LDFLAGS = (
-					"-lvpgl",
-					"-lvnl",
-					"-lvgl",
-					"-lvcl",
-					"-lvul",
-					"-lvpgl_algo",
-					"-lvsl",
-					"-lvpgl_io",
-					"-lvnl_io",
-					"-lvgl_io",
-					"-lvgl_algo",
-					"-lvnl_algo",
-					"-lv3p_netlib",
 					"-lvl",
 					"-lopencv_core",
 					"-lopencv_highgui",
