@@ -4,6 +4,7 @@ function m = PanYTiltX2matrix(pan,tilt)
     tilt = deg2rad(tilt);
     
     R_tilt = zeros(3,3);
+    R_tilt(1,1) = 1;
     R_tilt(2,2) = cos(tilt);
     R_tilt(2,3) = sin(tilt);
     R_tilt(3,2) = -sin(tilt);
