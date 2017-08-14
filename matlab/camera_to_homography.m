@@ -1,5 +1,7 @@
 % camera to homography
 function h = camera_to_homography(camera)
+% camera format: u, v, fl, rx, ry, rz, cx, xy, cz
+% (rx, ry, rz) is in rodrigues format
 assert(length(camera) == 9);
 
 % 
