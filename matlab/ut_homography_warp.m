@@ -13,13 +13,12 @@ load('camera_3600.mat');
 camera2 = camera;
 image2 = imread('00003600.jpg');
 
-
 h1 = camera_to_homography(camera1);
 h2 = camera_to_homography(camera2);
 
 h12 = h2 * inv(h1);  % homography from image 1 to image 2
 
-output_image = homography_warp(h12, image1);
+output_image = homography_warp(h12, image1, size(image1));
 figure; imshow(output_image); title('warped image');
 
 blend_image = uint8(0.5 * output_image + 0.5 * image2);
