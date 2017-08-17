@@ -1,20 +1,11 @@
 % visualize soccer field
 clear
 close all;
-addpath('./matlab_util');
 
-s = xml2struct('soccer_field_wireframe_model.xml');
+addpath('../../data');
 
-t = s.opencv_storage.points.data.Text;
-t = regexprep(t,'\s+',' ');  % replace \n with space, s for single?
-[points, status] = str2num(t);
-points = reshape(points, 2, length(points)/2)'; 
-status
-t = s.opencv_storage.line_index.data.Text;
-t = regexprep(t, '\s+', ' ');
-[index, status] = str2num(t);
-index = reshape(index', 2, length(index)/2)';
-status
+load('soccer_field_model.mat');
+index = line_segment_index;
 
 figure;
 
@@ -27,11 +18,18 @@ for i = [1: N]
     x = [points(idx1, 1), points(idx2, 1)];
     y = [points(idx1, 2), points(idx2, 2)];
     
-    plot(x, y, 'k');    
+    plot(x, y, 'g', 'lineWidth', 3);    
     hold on; 
 end
+set(gca, 'xtick', []); % Get Current Axis?
+set(gca, 'xticklabel', []);
+set(gca, 'ytick', []);
+set(gca, 'yticklabel', []);
+
 axis equal
 hold off;
+xlim([-10, 118]);
+
 
 
 
