@@ -30,7 +30,7 @@ x = [image_points(idx1, 1), image_points(idx2, 1)];
 y = [image_points(idx1, 2), image_points(idx2, 2)];
 plot(x', y', 'g', 'lineWidth', 2);
 
-f = getframe(gcf)
+f = getframe(gcf);
 image =f.cdata;
 close(1)
 end
