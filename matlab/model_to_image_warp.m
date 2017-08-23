@@ -24,6 +24,6 @@ h = world2image * model2world;  % model to image homography
 % model template is an image
 template = uint8(ones(model_h*12, model_w*12, 3))*255;
 
-warped_template = homography_warp(h, template, dst_size);
+warped_template = homography_warp(h, template, dst_size, [0, 0, 0]);
                
 end
