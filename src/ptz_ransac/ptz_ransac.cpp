@@ -7,11 +7,12 @@ using namespace Eigen;
 enum {
   iPoint,
   iPanTilt,
-  iThreshold,
+  iThreshold,  
   nI
 };
 
 enum {
+  
   oPTZ,   
   nO
 };
