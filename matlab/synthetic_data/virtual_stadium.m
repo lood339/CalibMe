@@ -21,7 +21,7 @@ y_min = 0;
 y_max = 74 * 0.9144;
 
 side_width = 5;
-sample_num = 2000;
+sample_num = 200;
 [playing_field] = sample_3d_cube(x_min, x_max, y_min, y_max, 0, 0, sample_num/2);
 [left_side] = sample_3d_cube(x_min - side_width, x_min, y_min - side_width, y_max + side_width, 0, 20, sample_num);
 [right_side] = sample_3d_cube(x_max, x_max + side_width, y_min - side_width, y_max + side_width, 0, 20, sample_num);
