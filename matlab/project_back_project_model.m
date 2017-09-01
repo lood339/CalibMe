@@ -44,7 +44,10 @@ plot(x', y', 'r-', 'lineWidth', 2);
 
 axis equal
 set(gca,'xtick',[])
+set(gca,'xticklabel',[])
 set(gca,'ytick',[])
+set(gca,'yticklabel',[])
+axis off;
 
 
 end
