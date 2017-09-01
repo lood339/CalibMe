@@ -9,9 +9,6 @@ assert(length(predicted_camera) == 9);
 gt_h = model_to_image_homography(gt_camera, model_h, model_w);
 est_h = model_to_image_homography(predicted_camera, model_h, model_w);
 
-%gt_h = gt_h/max(abs(gt_h(:)));
-%est_h = est_h/max(abs(est_h(:)));
-
 % homography composition
 h = inv(est_h) * gt_h;
 

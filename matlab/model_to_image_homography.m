@@ -1,4 +1,6 @@
 function [h] = model_to_image_homography(camera, model_h, model_w)
+% model means a template (an image) of the model, it is Not in the world
+% coordinate
 assert((model_h == 70  && model_w == 118) || (model_h == 75  && model_w == 115));
 
 template_h = model_h * 36/3; % every pixel is 3 inch
