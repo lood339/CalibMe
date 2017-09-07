@@ -3,7 +3,7 @@ clear
 close all;
 
 addpath('./test_image');
-
+addpath('/Users/jimmy/Source/CalibMe/data/');
 load('camera_14400.mat');
 image = imread('00014400.jpg');
 

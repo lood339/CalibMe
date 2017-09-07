@@ -9,6 +9,7 @@
 #if 1
 
 #include <stdlib.h>
+#include <time.h>
 #include "cvxImage_310.hpp"
 #include "eigenVLFeatSIFT.h"
 #include "eigenFlann.h"
@@ -39,7 +40,7 @@ using Eigen::AngleAxisd;
 int main(int argc, const char * argv[])
 {
    
-    /*
+    
     if (argc != 3)
     {
         help();
@@ -50,12 +51,13 @@ int main(int argc, const char * argv[])
     // get parameters
     const char *referenceFrameFolder = argv[1];
     const char *testImageFolder = argv[2];
-     */
+     
     
-    
+    /*
      //debug
     const char *referenceFrameFolder = "./reference_frames/*.txt";
     const char *testImageFolder = "./images/*.jpg";
+	*/
     
     
     // Step 1: load reference frames and testing images
@@ -97,6 +99,7 @@ int main(int argc, const char * argv[])
     }
     
     // Step 3: calibrate testing images
+	
     for (int i = 0; i<test_image_names.size(); i += 1) {
         // Step 3.1: detect sift feature in the testing image
         string cur_image_name = test_image_names[i].c_str();
@@ -106,6 +109,7 @@ int main(int argc, const char * argv[])
         EigenVLFeatSIFT::extractSIFTKeypoint(queryImage, sift_para, queryImageFeatures);
         
         // loop all reference frames, choose one with the largest matching numbers
+		double tt = clock();
         int max_inlier = 0;
         cvx::perspective_camera finalCamera;
         for (int j = 0; j<refFrameFeaturesVec.size(); j++) {
@@ -143,9 +147,9 @@ int main(int argc, const char * argv[])
                     max_inlier = n_inlier;
                     finalCamera = curCamera;
                 }
-            }
-             
+            }             
         }
+		printf("Camera pose estimation cost time: %f seconds.\n", (clock() - tt)/CLOCKS_PER_SEC);
         if (max_inlier >= 4) {
             char save_name[1024] = {NULL};
             sprintf(save_name, "./result/%08d.txt", i);

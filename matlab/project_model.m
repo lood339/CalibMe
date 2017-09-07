@@ -46,7 +46,7 @@ idx1 = model_line_segment(:, 1); % linesegment start index
 idx2 = model_line_segment(:, 2); % linesegment end index
 x = [image_points(idx1, 1), image_points(idx2, 1)];
 y = [image_points(idx1, 2), image_points(idx2, 2)];
-plot(x', y', 'r');
+plot(x', y', 'g', 'lineWidth', 2);
 
 end
 %{
