@@ -1,6 +1,7 @@
 function r = cal_ratio(x,y,Opt)
 % calculate the cross ratio from fixed soccer field model
 % x,y : manually chose
+% assuming points are from left to right or top to bottom
     % Opt = 1 : vertical lines
     % Opt = 0 : horizontal lines
     if Opt
