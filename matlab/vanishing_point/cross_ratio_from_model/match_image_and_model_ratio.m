@@ -4,6 +4,7 @@ close all
 addpath('/home/ritazhu/sports/vanishing_point');
 
 load('ratio_vertical_line.mat');
+
 load('ratio_horizontal_line.mat');
 ratio_line = ratio_vertical_line;
 load('79_vp.mat'); 

@@ -19,8 +19,6 @@ h2 = camera_to_homography(camera2);
 
 h12 = h2 * inv(h1);  % homography from image 1 to image 2
 
-output_image = homography_warp(h12, image1, size(image1), [0, 0, 0]);
-figure; imshow(output_image); title('warped image');
+output_image = warp_overlay_image(h12, image1, image2);
+figure; imshow(output_image); title('blend image');
 
-blend_image = uint8(0.5 * output_image + 0.5 * image2);
-figure; imshow(blend_image); title('blend image');
